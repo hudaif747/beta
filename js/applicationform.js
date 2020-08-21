@@ -52,6 +52,7 @@ $form.validate({
             digits: true,
             maxlength: 12
         },
+        "Education1[]": "required"
     },
     messages: {
         Name: "Please Enter your Name",
