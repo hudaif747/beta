@@ -42,7 +42,16 @@ $form.validate({
         "Mobile-Number": {
             digits: true,
             maxlength: 12
-        }
+        },
+        "Father-Contact-Number": {
+            required: true,
+            digits: true,
+            maxlength: 12
+        },
+        "Mother-Contact-Number": {
+            digits: true,
+            maxlength: 12
+        },
     },
     messages: {
         Name: "Please Enter your Name",
@@ -104,9 +113,6 @@ function onSuccess() {
 
 }
 
-$('#application-submit').on('click', function (e) {
-
-});
 
 function onXClick() {
     $(".overlay").css({
