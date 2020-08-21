@@ -49,9 +49,9 @@ function sendEmail() {
     var body = $('#message_contact').val();
     Email.send({
         SecureToken: "b3219ce1-a0c3-4737-8f6c-cdf4bd617225",
-        To: "hudaif747@gmail.com",
+        To: "hawwahcollege@gmail.com",
         From: $('#email_contact').val(),
-        Subject: "Feedback on hawwah website from " + $('#name_contact').val(),
+        Subject: "Feedback on Hawwah website from: " + $('#name_contact').val(),
         Body: $('#message_contact').val()
     }).then(onSuccess());
 }

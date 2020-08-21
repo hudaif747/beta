@@ -41,16 +41,19 @@ $form.validate({
         },
         "Mobile-Number": {
             digits: true,
-            maxlength: 12
+            maxlength: 12,
+            minlength: 10
         },
         "Father-Contact-Number": {
             required: true,
             digits: true,
-            maxlength: 12
+            maxlength: 12,
+            minlength: 10
         },
         "Mother-Contact-Number": {
             digits: true,
-            maxlength: 12
+            maxlength: 12,
+            minlength: 10
         },
         "Education1[]": "required"
     },
