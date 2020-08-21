@@ -1,0 +1,411 @@
+/* CUSTOM CSS HERE */
+
+
+/*======================= SNACKBAR CSS================== */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/* egg button */
+#egg-button {
+    width: 50px;
+    background-color: #444;
+    color: #fff;
+
+}
+
+/* pulse text */
+
+.pulse-text {
+    position: absolute;
+    height: 100px;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 100px auto 100px;
+    text-align: center;
+    transition: all 1s ease-in;
+}
+
+
+.pulse-text h1 {
+    position: relative;
+    color: #ccc;
+}
+
+.pulse-text:before {
+    -webkit-animation: 0.4s ease-in infinite;
+    -moz-animation: 0.4s ease-in infinite;
+    animation: 0.4s ease-in infinite;
+    opacity: 0;
+}
+
+.pulse-text:after {
+    -webkit-animation: 0.4s linear infinite;
+    -moz-animation: 0.4s linear infinite;
+    animation: 0.4s linear infinite;
+    opacity: 1;
+}
+
+.item small {
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Georgia', cursive;
+}
+
+.bg_content.endline {
+    height: 100px;
+}
+
+.bg_content.endline h3 {
+    font-size: 36px;
+    color: #444;
+    margin: 5px 0 5px 0;
+}
+
+.bg_content.endline p {
+    font-family: "proxima_novalight", Arial, sans-serif;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #444;
+}
+
+textarea {
+    resize: none;
+}
+
+.button1 {
+    display: inline-block;
+    padding: 0.05em 0.2em;
+    border: 2px solid #444;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 52px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: #444;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 1px 7px;
+    margin: 0 4px;
+}
+
+.button1:hover {
+    color: #444;
+    background-color: #FFFFFF;
+}
+
+
+@media all and (max-width:30em) {
+    .button1 {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+#eq2,
+#eq3,
+#eq4 {
+    display: none;
+}
+
+#logo img {
+    width: 125px;
+    height: 40px;
+}
+
+div.admissions {
+    margin: 20px auto 60px;
+}
+
+.aboutpage img {
+    height: 157.5px;
+    width: 360px;
+    object-fit: cover;
+}
+
+
+.img_list img {
+    height: auto;
+    width: 100%;
+}
+
+#feestructure {
+    margin: 30px auto;
+}
+
+#newstab img {
+    height: 216.5px;
+    width: 360px;
+    object-fit: cover;
+}
+
+/* contacts page */
+
+.contactus a {
+    color: inherit;
+}
+
+@media (max-width: 950px) {
+    .contactus {
+        text-align: center;
+    }
+}
+
+#contact-footband {
+    background-color: #fff;
+}
+
+/* about page icon no cursorchange on hover */
+a.box_feat:hover {
+    cursor: default
+}
+
+/* about page blockquote reduce font size */
+
+blockquote {
+    font-size: 14px;
+}
+
+/* home feat box 1 changes */
+
+
+.home_feat_1_box img {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.home_feat_1_box,
+.short_info {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.home_feat_1_box:hover img,
+.home_feat_1_box:focus img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.home_feat_1_box:hover .short_info,
+.home_feat_1_box:focus .short_info {
+
+    background-color: rgba(27, 47, 59, 0.80);
+}
+
+.home_feat_1_box a:hover .short_info h3:hover {
+    color: #73d0da;
+}
+
+/* admisssions page */
+
+#admission p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #222;
+    margin-bottom: 50px;
+}
+
+#admission li {
+    list-style-type: none;
+}
+
+.box_style_1 h4 {
+    font-size: 22px;
+}
+
+#icon_indent i {
+    font-size: 40px;
+    position: relative;
+    left: 0;
+    color: #622960;
+    top: 18px;
+    margin-right: 10px;
+}
+
+/* application form education details */
+
+.education_box {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 20px 15px 3px 15px;
+    position: relative;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.education_label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: white;
+    font-size: 16px;
+}
+
+/* popup modal form */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 40%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+
+/* success icon animated */
+.check.icon {
+    color: #06D85F;
+    margin: 20px auto;
+    width: 42px;
+    height: 20px;
+    border-bottom: solid 2px currentColor;
+    border-left: solid 2px currentColor;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
